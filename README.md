@@ -30,7 +30,7 @@ Para compilar y ejecutar este proyecto necesitas:
 | Taller01_Aponte                 | Memoria dinámica, concurrencia y rendimiento|
 | laboratorioRendimiento_Aponte   | Memoria dinámica, concurrencia y rendimiento|
 | labForkPipe_Aponte              | POSIX, fork() y pipe()                      | 
-
+| lab_P_C_Aponte                  | Patrón FIFO mediante pipes                  |
 ---
 
 ## Desarrollo de contenidos
@@ -106,9 +106,20 @@ Se hicieron algunas mejoras para que el programa compilara correctamente:
 
 Laboratorio referente a los procesos de enseñanza en clase sobre POSIX, en donde se trataron temas como la creación de múltiples procesos utilizando la función fork() y la comunicación de estos utilizando pipe(). El código presente en este fichero cuenta con documentación exhaustiva, como parte del proceso de aprendizaje, buscando aumentar la comprensión de los temas tratados durante la clase
 
-### Archivos del fichero
+#### Archivos del fichero
 
 - lab01_Aponte.c: Primer programa, mostrando el ID de los procesos duplicados con fork()
 - lab02_Aponte.c: Segundo programa, mostrando como los procesos duplicados con fork() pueden realizar tareas diferentes
 - lab02_Aponte.c: Tercer programa, mostrando como se comunican los procesos duplicados con fork() utilizando pipe
 - makefile: automatización para la compilación del código y eliminación de ejecutables y objetos.
+
+---
+
+### labP_C_Aponte
+
+Laboratorio referente a los procesos de enseñanza en clase sobre Pipes, en donde se desarrolla el tema de Implementación del patrón Productor-Consumidor usando Pipe Named (FIFO). Los programas actúan como un cliente y un servidor en un esquema de comunicación entre procesos mediante pipes nombrados (FIFOs). Permite recibir mensajes de texto desde un proceso cliente, procesarlos (invertir la cadena) y enviar una respuesta de vuelta al cliente desde el servidor.
+
+#### Archivos del fichero
+
+- cliente.c: Representación del cliente, en donde el usuario envía una cadena de caracteres y espera recibir una respuesta del servidor.
+- servidor.c: Representación del servidor, en donde el servidor recibe una cadena de caracteres desde el cliente, la invierte y la vuelve a enciar al cliente.
