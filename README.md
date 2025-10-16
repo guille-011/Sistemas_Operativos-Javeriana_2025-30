@@ -123,3 +123,4 @@ Laboratorio referente a los procesos de enseñanza en clase sobre Pipes, en dond
 
 - cliente.c: Representación del cliente, en donde el usuario envía una cadena de caracteres y espera recibir una respuesta del servidor.
 - servidor.c: Representación del servidor, en donde el servidor recibe una cadena de caracteres desde el cliente, la invierte y la vuelve a enciar al cliente.
+- makefile: automatización para la compilación del código y eliminación de ejecutables y objetos, compilable con el comando all.
