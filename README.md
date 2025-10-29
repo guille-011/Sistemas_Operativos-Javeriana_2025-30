@@ -31,6 +31,7 @@ Para compilar y ejecutar este proyecto necesitas:
 | laboratorioRendimiento_Aponte   | Memoria dinámica, concurrencia y rendimiento|
 | labForkPipe_Aponte              | POSIX, fork() y pipe()                      | 
 | lab_P_C_Aponte                  | Patrón FIFO mediante pipes                  |
+| TallerProcesos_Aponte-Ramirez   | POSIX, fork() y pipe()                      |
 ---
 
 ## Desarrollo de contenidos
@@ -124,3 +125,17 @@ Laboratorio referente a los procesos de enseñanza en clase sobre Pipes, en dond
 - cliente.c: Representación del cliente, en donde el usuario envía una cadena de caracteres y espera recibir una respuesta del servidor.
 - servidor.c: Representación del servidor, en donde el servidor recibe una cadena de caracteres desde el cliente, la invierte y la vuelve a enciar al cliente.
 - makefile: automatización para la compilación del código y eliminación de ejecutables y objetos, compilable con el comando all.
+
+---
+
+### TallerProcesos_Aponte-Ramirez
+
+Taller grupal realizado en compañía de Daniel Ramirez referente a la aplicación en un problema práctico de las funciones fork() y pipe() para la división y comunicación de procesos, para esto se efectuó la creación de múltiples procesos utilizando la función fork() y la comunicación de estos utilizando pipe(). El código presente en este fichero cuenta con documentación exhaustiva, como parte del proceso de aprendizaje, buscando aumentar la comprensión de los temas tratados durante la clase
+
+#### Archivos del fichero
+
+- Informe-TallerProcesos-Aponte_Ramirez.pdf: Informe en formato PDF con toda la información necesaria para la comprensión del taller, incluyendo Marco Teórico, objetivos, resultados y análisis de resultados. 
+- makefile: automatización para la compilación del código y eliminación de ejecutables y objetos.
+- modulo_procesos.h: Prototipos de la funciones.
+- modulo_procesos.c: Implementación de las funciones necesarias para el desarrollo de lo planteado.
+- taller_procesos.c: Implementación de la funcion main donde se realiza el llamado a las demás funciones, la división del programa en varios procesos y su comunicación. 
