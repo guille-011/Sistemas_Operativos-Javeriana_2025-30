@@ -32,6 +32,7 @@ Para compilar y ejecutar este proyecto necesitas:
 | labForkPipe_Aponte              | POSIX, fork() y pipe()                      | 
 | lab_P_C_Aponte                  | Patrón FIFO mediante pipes                  |
 | TallerProcesos_Aponte-Ramirez   | POSIX, fork() y pipe()                      |
+| Pthread_Lab_Aponte              | Pthread, deadlocks, race conditions         |
 ---
 
 ## Desarrollo de contenidos
@@ -139,3 +140,22 @@ Taller grupal realizado en compañía de Daniel Ramirez referente a la aplicaci�
 - modulo_procesos.h: Prototipos de la funciones.
 - modulo_procesos.c: Implementación de las funciones necesarias para el desarrollo de lo planteado.
 - taller_procesos.c: Implementación de la funcion main donde se realiza el llamado a las demás funciones, la división del programa en varios procesos y su comunicación. 
+
+--- 
+
+### Pthread_Lab_Aponte
+
+Laboratorio iniciado en clase y desarrollado como asignación externa, referente a todos los procesos de enseñanza relacionados con los hilos mediante las funciones de pthread provenientes de la libreria POSIX, mostrando la prevención de race conditions y de deadlocks mediante el uso de MUTEX, waits, signals, etc. Los archivos presentes en el fichero contienen la correspondiente documentación exhaustiva de cada cosa realizada por el código, además de ciertas correciones con respecto a lo visto en clase, para mejora el funcionamiento del código.
+
+#### Archivos del fichero
+
+- lab_pthread00_Aponte.c: Primer programa, ejemplo de creación de hilos con pthreads
+- lab_pthread01_Aponte.c: Segundo programa, ejemplo de creación de hilos con pthreads
+- lab_pthread02_Aponte.c: Tercer programa, ejemplo de mutex para evitar race conditions
+- lab_pthread03_Aponte.c: Cuarto programa, ejemplo de mutex y condicionales para evitar race conditions
+- lab_pthread04_Aponte.c: Quinto programa, ejemplo de mutex para evitar race conditions
+- lab_pthread05_Aponte.c: Sexto programa, ejemplo de race conditions que puede producirse al no usar mutex
+- lab_pthread06_Aponte.c: Septimo programa, Correción del programa anterior, implementando mutex
+- lab_pthread07_Aponte.c: Octavo programa, ejemplo de race conditions que puede producirse al no usar mutex ni condicionales
+- lab_pthread08_Aponte.c: Noveno programa, Correción del programa anterior, implementando mutex y condicionales
+- makefile: automatización para la compilación del código y eliminación de ejecutables y objetos.
