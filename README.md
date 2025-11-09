@@ -33,6 +33,7 @@ Para compilar y ejecutar este proyecto necesitas:
 | lab_P_C_Aponte                  | Patrón FIFO mediante pipes                  |
 | TallerProcesos_Aponte-Ramirez   | POSIX, fork() y pipe()                      |
 | Pthread_Lab_Aponte              | Pthread, deadlocks, race conditions         |
+| lab_OpenMP_Aponte               | Paralelismo con OpenMP                      |
 ---
 
 ## Desarrollo de contenidos
@@ -158,4 +159,20 @@ Laboratorio iniciado en clase y desarrollado como asignación externa, referente
 - lab_pthread06_Aponte.c: Septimo programa, Correción del programa anterior, implementando mutex
 - lab_pthread07_Aponte.c: Octavo programa, ejemplo de race conditions que puede producirse al no usar mutex ni condicionales
 - lab_pthread08_Aponte.c: Noveno programa, Correción del programa anterior, implementando mutex y condicionales
+- makefile: automatización para la compilación del código y eliminación de ejecutables y objetos.
+
+---
+
+### lab_OpenMP_Aponte 
+
+Laboratorio iniciado en clase y desarrollado como asignación externa, referente a los procesos de enseñanza relacionados con la paralelización mediante hilos usando OpenMP, se realizaron todos los ajustes necesarios al código para permitir el funcionamiento correcto según las salidas deseadas, utilizando directivas de compilador, regiones paralelas, y paralelización de ciclos for.
+
+#### Archivo del fichero
+
+- lab_OMP01.c: Primer programa, ejemplo de paralelización usando OpemMP
+- lab_OMP02.c: Segundo programa, ejemplo de paralelización usando OpemMP, solicitandole la cantidad de hilos al usuario
+- lab_OMP03.c: Tercer programa, ejemplo de paralelización de ciclo for usando OpenMp, con variables privadas
+- lab_OMP04.c: Cuarto programa, ejemplo de paralelización de ciclo for usando OpenMp, con variables privadas y lastprivate
+- lab_OMP05.c: Quinto programa, ejemplo de paralelización de ciclo for usando OpemMp, usando reducciones
+- lab_OMP06.c: Sexto programa, ejemplo de paralelización de ciclo for usando OpemMp, usando reducciones y solicitándole al usuario la cantidad de repeticiones y la cantidad de hilos usados, añadiendo la medición del tiempo de ejecución
 - makefile: automatización para la compilación del código y eliminación de ejecutables y objetos.
