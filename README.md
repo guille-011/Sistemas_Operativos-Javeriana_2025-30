@@ -207,8 +207,8 @@ se realizan gráficas comparativas de el mismo proceso en diferentes algoritmos 
 - calculadoraPromedios.c: Programa en C que calcula el promedio basado en los datos obtenidos del experimento.
 - Makefile: Automatización de compilación.
 - lanzador.pl: Fichero en perl que automatiza la ejecución de los ejecutables, cambiando los argumentos enviados.
-- ClasicaFork: Fichero que contiene el algoritmo modularizado para multiplicación de matrices usando forks
-- ClasicaOpenMP: Fichero que contiene el algoritmo modularizado para multiplicación de matrices usando hilos con OpenMP
-- ClasicaPosix: Fichero que contiene el algoritmo modularizado para multiplicación de matrices usando hilos con pthread
-- OpemMpFilas: Fichero que contiene el algoritmo modularizado para multiplicación de matrices usando hilos con OpenMP multiplicando por filas en lugar de por columnas.
+- ClasicaFork: Directorio que contiene el algoritmo modularizado para multiplicación de matrices usando forks
+- ClasicaOpenMP: Directorio que contiene el algoritmo modularizado para multiplicación de matrices usando hilos con OpenMP
+- ClasicaPosix: Directorio que contiene el algoritmo modularizado para multiplicación de matrices usando hilos con pthread
+- OpemMpFilas: Directorio que contiene el algoritmo modularizado para multiplicación de matrices usando hilos con OpenMP multiplicando por filas en lugar de por columnas.
 - Informe-Taller-Rendimiento_G_Aponte_D_Ramirez_D_Tobar_J_Daza.pdf: Informe final con todo el proceso, resultados y anáisis identificados para el taller.
