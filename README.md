@@ -178,6 +178,16 @@ Laboratorio iniciado en clase y desarrollado como asignación externa, referente
 - lab_OMP06.c: Sexto programa, ejemplo de paralelización de ciclo for usando OpemMp, usando reducciones y solicitándole al usuario la cantidad de repeticiones y la cantidad de hilos usados, añadiendo la medición del tiempo de ejecución
 - makefile: automatización para la compilación del código y eliminación de ejecutables y objetos.
 
+---
+
 ### lab_ficheros_Aponte
 
-Laboratorio iniciado en clase 
+Laboratorio iniciado en clase y desarrollado como asignación externa, referente a todos los procesos de enseñanza relacionado con el manejo de ficheros regulares y de directorios usando funciones de C y la libreria dirent.h.
+
+
+#### ficheros del directorio
+
+- lab_ficheros_01.c: Primer programa, lectura desde un fichero e impresión de lo leído
+- lab_ficheros_02.c: Segundo programa, lectura de los ficheros de un directorio e impresión de sus caracteristicas
+- lab_ficheros_03.c: Tercer programa, lectura de los ficheros y directorios editados en los últimos 10 dias de otro directorio, imprimiento fechas de edición, permisos, tipo de fichero y nombre.
+- makefile: automatización para la compilación del código y eliminación de ejecutables y objetos.
