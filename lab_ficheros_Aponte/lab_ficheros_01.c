@@ -25,7 +25,7 @@
 /*Función principal, lee de un archivo e imprime su lectura*/
 int main(int argc, char *argv[]) {
     
-    char *nombrefichero = "readme.txt"; //Se guarda en la cadena *nombrefichero el nombre del archivo "readme.txt"
+    char *nombrefichero = "../readme.txt"; //Se guarda en la cadena *nombrefichero el nombre del archivo "readme.txt"
     
   
   /*Se abre el archivo usando la función fopen, esta función recibe como parámetros el nombre del archivo y

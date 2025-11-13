@@ -34,6 +34,7 @@ Para compilar y ejecutar este proyecto necesitas:
 | TallerProcesos_Aponte-Ramirez   | POSIX, fork() y pipe()                      |
 | Pthread_Lab_Aponte              | Pthread, deadlocks, race conditions         |
 | lab_OpenMP_Aponte               | Paralelismo con OpenMP                      |
+| lab_ficheros_Aponte             | Manejo de ficheros y directorios con C      |
 ---
 
 ## Desarrollo de contenidos
@@ -50,7 +51,7 @@ Se hicieron algunas modificaciones para que el programa compilara correctamente:
 - Se cambió la manera en que se declaraban las matrices en el main, usando la función malloc para darles memoria dinámica y declarándolas con apuntadores.  
 - Se incluyeron nuevos printf en el main, para tener mas claridad en lo que se estaba imprimiento por consola. 
 
-#### Archivos del fichero
+#### ficheros del directorio
 
 - makefile: automatización para la compilación del código y eliminación de ejecutables y objetos.
 - modulo.h: prototipos de funciones
@@ -72,7 +73,7 @@ Se hicieron algunas mejoras para que el programa compilara correctamente:
 - En reto04 se devolvía código de error 0 cuando fallaba calloc, se reemplazó por 1, para tener mejor manejo de esto y diferenciarse del main  
 - En reto05 faltaba la parte final del main, se agregó para que compile correctamente.
 
-#### Archivos del fichero
+#### ficheros del directorio
 
 - reto01.c: Primer programa con las temáticas tratadas
 - reto02.c: Segundo programa con las temáticas tratadas
@@ -96,7 +97,7 @@ Se hicieron algunas mejoras para que el programa compilara correctamente:
 - En reto04 se devolvía código de error 0 cuando fallaba calloc, se reemplazó por 1, para tener mejor manejo de esto y diferenciarse del main  
 - En reto05 faltaba la parte final del main, se agregó para que compile correctamente.
 
-#### Archivos del fichero
+#### ficheros del directorio
 
 - makefile: automatización para la compilación del código y eliminación de ejecutables y objetos.
 - modulo.h: prototipos de funciones
@@ -109,7 +110,7 @@ Se hicieron algunas mejoras para que el programa compilara correctamente:
 
 Laboratorio referente a los procesos de enseñanza en clase sobre POSIX, en donde se trataron temas como la creación de múltiples procesos utilizando la función fork() y la comunicación de estos utilizando pipe(). El código presente en este fichero cuenta con documentación exhaustiva, como parte del proceso de aprendizaje, buscando aumentar la comprensión de los temas tratados durante la clase
 
-#### Archivos del fichero
+#### ficheros del directorio
 
 - lab01_Aponte.c: Primer programa, mostrando el ID de los procesos duplicados con fork()
 - lab02_Aponte.c: Segundo programa, mostrando como los procesos duplicados con fork() pueden realizar tareas diferentes
@@ -122,7 +123,7 @@ Laboratorio referente a los procesos de enseñanza en clase sobre POSIX, en dond
 
 Laboratorio referente a los procesos de enseñanza en clase sobre Pipes, en donde se desarrolla el tema de Implementación del patrón Productor-Consumidor usando Pipe Named (FIFO). Los programas actúan como un cliente y un servidor en un esquema de comunicación entre procesos mediante pipes nombrados (FIFOs). Permite recibir mensajes de texto desde un proceso cliente, procesarlos (invertir la cadena) y enviar una respuesta de vuelta al cliente desde el servidor.
 
-#### Archivos del fichero
+#### ficheros del directorio
 
 - cliente.c: Representación del cliente, en donde el usuario envía una cadena de caracteres y espera recibir una respuesta del servidor.
 - servidor.c: Representación del servidor, en donde el servidor recibe una cadena de caracteres desde el cliente, la invierte y la vuelve a enciar al cliente.
@@ -134,7 +135,7 @@ Laboratorio referente a los procesos de enseñanza en clase sobre Pipes, en dond
 
 Taller grupal realizado en compañía de Daniel Ramirez referente a la aplicación en un problema práctico de las funciones fork() y pipe() para la división y comunicación de procesos, para esto se efectuó la creación de múltiples procesos utilizando la función fork() y la comunicación de estos utilizando pipe(). El código presente en este fichero cuenta con documentación exhaustiva, como parte del proceso de aprendizaje, buscando aumentar la comprensión de los temas tratados durante la clase
 
-#### Archivos del fichero
+#### ficheros del fichero
 
 - Informe-TallerProcesos-Aponte_Ramirez.pdf: Informe en formato PDF con toda la información necesaria para la comprensión del taller, incluyendo Marco Teórico, objetivos, resultados y análisis de resultados. 
 - makefile: automatización para la compilación del código y eliminación de ejecutables y objetos.
@@ -148,7 +149,7 @@ Taller grupal realizado en compañía de Daniel Ramirez referente a la aplicaci�
 
 Laboratorio iniciado en clase y desarrollado como asignación externa, referente a todos los procesos de enseñanza relacionados con los hilos mediante las funciones de pthread provenientes de la libreria POSIX, mostrando la prevención de race conditions y de deadlocks mediante el uso de MUTEX, waits, signals, etc. Los archivos presentes en el fichero contienen la correspondiente documentación exhaustiva de cada cosa realizada por el código, además de ciertas correciones con respecto a lo visto en clase, para mejora el funcionamiento del código.
 
-#### Archivos del fichero
+#### ficheros del directorio
 
 - lab_pthread00_Aponte.c: Primer programa, ejemplo de creación de hilos con pthreads
 - lab_pthread01_Aponte.c: Segundo programa, ejemplo de creación de hilos con pthreads
@@ -167,7 +168,7 @@ Laboratorio iniciado en clase y desarrollado como asignación externa, referente
 
 Laboratorio iniciado en clase y desarrollado como asignación externa, referente a los procesos de enseñanza relacionados con la paralelización mediante hilos usando OpenMP, se realizaron todos los ajustes necesarios al código para permitir el funcionamiento correcto según las salidas deseadas, utilizando directivas de compilador, regiones paralelas, y paralelización de ciclos for.
 
-#### Archivo del fichero
+#### ficheros del directorio
 
 - lab_OMP01.c: Primer programa, ejemplo de paralelización usando OpemMP
 - lab_OMP02.c: Segundo programa, ejemplo de paralelización usando OpemMP, solicitandole la cantidad de hilos al usuario
@@ -176,3 +177,7 @@ Laboratorio iniciado en clase y desarrollado como asignación externa, referente
 - lab_OMP05.c: Quinto programa, ejemplo de paralelización de ciclo for usando OpemMp, usando reducciones
 - lab_OMP06.c: Sexto programa, ejemplo de paralelización de ciclo for usando OpemMp, usando reducciones y solicitándole al usuario la cantidad de repeticiones y la cantidad de hilos usados, añadiendo la medición del tiempo de ejecución
 - makefile: automatización para la compilación del código y eliminación de ejecutables y objetos.
+
+### lab_ficheros_Aponte
+
+Laboratorio iniciado en clase 
