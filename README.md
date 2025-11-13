@@ -24,17 +24,18 @@ Para compilar y ejecutar este proyecto necesitas:
 
 ## Resumen de contenidos
 
-| Nombre del fichero              | Tema trabajado                              |
-|---------------------------------|---------------------------------------------|
-| Taller00_Aponte                 | Compilacion modular                         |
-| Taller01_Aponte                 | Memoria dinámica, concurrencia y rendimiento|
-| laboratorioRendimiento_Aponte   | Memoria dinámica, concurrencia y rendimiento|
-| labForkPipe_Aponte              | POSIX, fork() y pipe()                      | 
-| lab_P_C_Aponte                  | Patrón FIFO mediante pipes                  |
-| TallerProcesos_Aponte-Ramirez   | POSIX, fork() y pipe()                      |
-| Pthread_Lab_Aponte              | Pthread, deadlocks, race conditions         |
-| lab_OpenMP_Aponte               | Paralelismo con OpenMP                      |
-| lab_ficheros_Aponte             | Manejo de ficheros y directorios con C      |
+| Nombre del fichero                          | Tema trabajado                              |
+|---------------------------------------------|---------------------------------------------|
+| Taller00_Aponte                             | Compilacion modular                         |
+| Taller01_Aponte                             | Memoria dinámica, concurrencia y rendimiento|
+| laboratorioRendimiento_Aponte               | Memoria dinámica, concurrencia y rendimiento|
+| labForkPipe_Aponte                          | POSIX, fork() y pipe()                      | 
+| lab_P_C_Aponte                              | Patrón FIFO mediante pipes                  |
+| TallerProcesos_Aponte-Ramirez               | POSIX, fork() y pipe()                      |
+| Pthread_Lab_Aponte                          | Pthread, deadlocks, race conditions         |
+| lab_OpenMP_Aponte                           | Paralelismo con OpenMP                      |
+| lab_ficheros_Aponte                         | Manejo de ficheros y directorios con C      |
+| TallerRendimiento_Aponte-Ramírez-Tobar-Daza | Comparación de algoritmos de paralelización |
 ---
 
 ## Desarrollo de contenidos
@@ -191,3 +192,23 @@ Laboratorio iniciado en clase y desarrollado como asignación externa, referente
 - lab_ficheros_02.c: Segundo programa, lectura de los ficheros de un directorio e impresión de sus caracteristicas
 - lab_ficheros_03.c: Tercer programa, lectura de los ficheros y directorios editados en los últimos 10 dias de otro directorio, imprimiento fechas de edición, permisos, tipo de fichero y nombre.
 - makefile: automatización para la compilación del código y eliminación de ejecutables y objetos.
+
+---
+
+### TallerRendimiento_Aponte-Ramírez-Tobar-Daza
+
+Taller desarrollado en grupo con los compañeros de clase Daniel Ramirez, David Tobar y Juan Daza, el desarrollo del taller consistió en la planeación de diversos experimentos que permitieran comparar diferentes algoritmos de multiplicación de matrices, usando diferentes tamaños, diferentes cantidades de hilos para paralelizar el algoritmo y repeticiones para medir el tiempo promedio que se tardó en realizar este proceso,
+se realizan gráficas comparativas de el mismo proceso en diferentes algoritmos y en diferentes equipos, finalmente se analizan los resultados obtenidos según el diseño de experimentos y se sacan conslusiones en un informe .pdf
+
+
+#### ficheros del directorio
+
+- Documentos .xlsx: Tablas realizadas en excel con los tiempos obtenidos para los experimentos en todos los equipos utilizados para el experimento.
+- calculadoraPromedios.c: Programa en C que calcula el promedio basado en los datos obtenidos del experimento.
+- Makefile: Automatización de compilación.
+- lanzador.pl: Fichero en perl que automatiza la ejecución de los ejecutables, cambiando los argumentos enviados.
+- ClasicaFork: Fichero que contiene el algoritmo modularizado para multiplicación de matrices usando forks
+- ClasicaOpenMP: Fichero que contiene el algoritmo modularizado para multiplicación de matrices usando hilos con OpenMP
+- ClasicaPosix: Fichero que contiene el algoritmo modularizado para multiplicación de matrices usando hilos con pthread
+- OpemMpFilas: Fichero que contiene el algoritmo modularizado para multiplicación de matrices usando hilos con OpenMP multiplicando por filas en lugar de por columnas.
+- Informe-Taller-Rendimiento_G_Aponte_D_Ramirez_D_Tobar_J_Daza.pdf: Informe final con todo el proceso, resultados y anáisis identificados para el taller.
