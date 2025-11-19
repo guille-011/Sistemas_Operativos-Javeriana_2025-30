@@ -215,6 +215,8 @@ se realizan gráficas comparativas de el mismo proceso en diferentes algoritmos 
 - OpemMpFilas: Directorio que contiene el algoritmo modularizado para multiplicación de matrices usando hilos con OpenMP multiplicando por filas en lugar de por columnas.
 - Informe-Taller-Rendimiento_G_Aponte_D_Ramirez_D_Tobar_J_Daza.pdf: Informe final con todo el proceso, resultados y anáisis identificados para el taller.
 
+---
+
 ### Taller03_POSIXsincronizacion_Aponte-Ramirez
 
 Taller realizado como asignación individual con el propósito de fortalecer procesos de aprendizaje en POSIX y named Semaphores, comprendiendo las carácteristicas de un código, analizándolo y sacando conclusiones en base a este.
@@ -226,6 +228,8 @@ Taller realizado como asignación individual con el propósito de fortalecer pro
 - Actividad_2:  Directorio que contiene los demás subdirectorios y ficheros para la realización de la actividad 2, en donde se sincronizan procesos de tal manera que realicen una serie de actividades correctamente.
 - Bonus:  Directorio que contiene los demás subdirectorios y ficheros para la realización de la actividad bono, en donde se analizan datos desde un archivo y se realiza concurrencia con múltiples procesos.
 - informeDeSincronizacion.pdf: Documento en pdf que contiene la respectiva descripción, análisis y conclusiones de los códigos realizados en clase.
+
+---
 
 ### ProyectoFinalSO_Aponte-Ramirez-Tobar
 
