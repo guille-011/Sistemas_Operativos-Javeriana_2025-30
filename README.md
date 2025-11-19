@@ -36,7 +36,8 @@ Para compilar y ejecutar este proyecto necesitas:
 | lab_OpenMP_Aponte                           | Paralelismo con OpenMP                      |
 | lab_ficheros_Aponte                         | Manejo de ficheros y directorios con C      |
 | TallerRendimiento_Aponte-Ramírez-Tobar-Daza | Comparación de algoritmos de paralelización |
-| Taller03_POSIXsincronizacion_Aponte-Ramirez | named semaphores en POSIX
+| Taller03_POSIXsincronizacion_Aponte-Ramirez | named semaphores en POSIX                   |
+| ProyectoFinalSO_Aponte-Ramirez-Tobar        | Todos los temas trabajados en el semestre   |                                               
 ---
 
 ## Desarrollo de contenidos
@@ -219,11 +220,23 @@ se realizan gráficas comparativas de el mismo proceso en diferentes algoritmos 
 Taller realizado como asignación individual con el propósito de fortalecer procesos de aprendizaje en POSIX y named Semaphores, comprendiendo las carácteristicas de un código, analizándolo y sacando conclusiones en base a este.
 
 
-#### ficheros del direcetorio
+#### ficheros del directorio
 
 - Actividad_1: Directorio que contiene los demás subdirectorios y ficheros para la realización de la actividad 1, en donde dos procesos se comunican haciendo pausas progresivas según se indique con un named semaphore.
 - Actividad_2:  Directorio que contiene los demás subdirectorios y ficheros para la realización de la actividad 2, en donde se sincronizan procesos de tal manera que realicen una serie de actividades correctamente.
 - Bonus:  Directorio que contiene los demás subdirectorios y ficheros para la realización de la actividad bono, en donde se analizan datos desde un archivo y se realiza concurrencia con múltiples procesos.
 - informeDeSincronizacion.pdf: Documento en pdf que contiene la respectiva descripción, análisis y conclusiones de los códigos realizados en clase.
 
+### ProyectoFinalSO_Aponte-Ramirez-Tobar
 
+Proyecto final realizado en grupo, en conjunto con Daniel Ramirez y David Tobar, en este directorio se ecuentras todos los ficheros en C usados para la creación del código necesario según lo indicado en el enunciado del proyecto, aprovechando los conocimientos adquiridos a lo largo del semestre para consolidar un sistema que permita a un controlador la recepción de las solicitudes de diferentes agentes para el alquiler de espacios en un parque de vacaciones, controlando el aforo máximo, el paso de las horas y generando reportes por hora y reporte final.
+
+#### ficheros del directorio
+
+- ModulosDeDefinicion: Directorio que contiene los archivos de cabecera de los programas de agente y de controlar, con las estructuras y la declaración de las funciones usadas en su posterior implementación
+- ModulosDeImplementacion: Directorio que contiene los archivos de implementación de los programas de controlador y de agente, incluyendo las funciones necesarias y los hilos usados en el programa.
+- AgenteDeReservas.c: Programa principal que controla todo el llamado a la funciones del proceso de agente.
+- ControladorDeReservas.c: Programa principal que controla todos los hilos usados por el programa de controlador.
+- DocumentoProyectoSO_Aponte-Ramirez-Tobar: Documento que contiene todo el proceso de diseño, pruebas, objetivos, resumen, marco teórico y conclusiones de todos los programas usados para el proyecto.
+- ProyectoSO_2025_30.pdf: Enunciado del proyecto usado para el posterior desarrollo del programa.
+- Makefile: Automatización de compilación.
